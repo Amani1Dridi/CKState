@@ -1,5 +1,5 @@
 import React from 'react'
-import amani from '../public/me.jpg'
+import amani from '../me.jpg'
 function ImgSrc() {
     return (
         <div>

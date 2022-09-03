@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+
 import FullName from './Components/fullname';
 import Bio from './Components/bio';
-import ImgSrc from './Components/img';
+import ImgSrc from './me.jpg';
 import Profession from './Components/prof';
-import {Card} from "react-bootstrap"
+import {Card, CardGroup, CardImg} from "react-bootstrap";
 import "./App.css"
  class App extends Component {
    constructor(props){
@@ -29,7 +30,7 @@ import "./App.css"
        {this.state.show ? (
          <div>
            <Card style={{ width: '26rem' }}>
-  <Card.Img src={ImgSrc} alt="It's My"  />
+  <CardImg src={ImgSrc} alt="It's My"  />
   <Card.Body>
     <Card.Title> <FullName /> </Card.Title>
     <Card.Text>
